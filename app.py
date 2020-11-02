@@ -22,7 +22,7 @@ application = Flask(__name__, template_folder='build/', static_folder='build/sta
 application.config['SQLALCHEMY_DATABASE_URI']           = db_path
 application.config['SQLALCHEMY_TRACK_MODIFICATIONS']    = True
 application.config['SQLALCHEMY_ECHO']                   = False
-application.config['SECRET_KEY']                        = b'_5#y2L"F4Q8z\n\xec]/'
+application.config['SECRET_KEY']                        = b'_5#ycu"F4Q8z\n\xec]/'
 application.config['REMEMBER_COOKIE']                   = True
 application.config['REMEMBER_COOKIE_SECURE']            = True
 application.config['REMEMBER_COOKIE_HTTPONLY']          = True

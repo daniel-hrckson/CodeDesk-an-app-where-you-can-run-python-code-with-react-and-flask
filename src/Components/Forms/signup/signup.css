@@ -1,0 +1,150 @@
+:root{
+    --zeroary-color: #FCA311;
+    --primary-color: #d0840b;
+    --secondary-color: #14213D;
+}
+
+.signup-main{
+    max-width: 450px;
+    min-width: 300px;
+    height: auto;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFF;
+    padding: 20px;
+    padding-top: 20px;
+    position: relative;
+    box-shadow: #000000 0px 0 1px;
+}
+
+.signup-main h4, h3{
+    text-align: center;
+    background-color: #FFFF;
+    font-size: 16px;
+
+}
+
+.signup-main p, a{
+    background-color: #FFFF;
+    margin-top: 20px;
+}
+
+.signup-main input, button{
+    padding: 10px;
+    margin-top: 20px;
+    border: var(--primary-color) 1px solid;
+    background-color: #FFFF;
+    font-size: 14px;
+    color: #000000;
+    /* align-items: flex-end; */
+}
+
+.signup-main button{
+    width: 200px;
+    align-self: center;
+    transition: 0.2s;
+    font-weight: 600;
+}
+
+.signup-main button:hover{
+    color: #FFFF;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+#transition-div a{
+  display: none;
+}
+
+
+#transition-div a[data-link-state = 'done']{
+  text-decoration: none;
+  width: 200px;
+  align-self: center;
+  transition: 0.2s;
+  font-weight: 600;
+  padding: 10px;
+  margin-top: 20px;
+  border: var(--primary-color) 1px solid;
+  background-color: #FFFF;
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+}
+
+#transition-div a:hover{
+    color: #FFFF;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+
+/* Working on transitions */
+.signup-main #transition-div{
+    position: absolute;
+    background-color: #FFFF;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    transition: 0.2s;
+    z-index: 1;
+    display: flex;
+
+}
+
+.signup-main #transition-div[data-transition = 'transition']{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+.signup-main #transition-div[data-transition = 'done']{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+.signup-main #transition-div[data-transition = 'wrong']{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.signup-main #transition-h3{transition: 0.2;}
+#transition-btn{transition: 0.2s;}
+
+.signup-main #transition-h3[data-h3-state = 'default']{display: none;}
+.signup-main #transition-h3[data-h3-state = 'transition']{display: block; z-index: 2; }
+.signup-main #transition-h3[data-h3-state = 'done']{display: block; z-index: 2;}
+
+.signup-main #transition-btn{display: none;}
+.signup-main #transition-btn[data-btn-state = 'default']{display: none;}
+.signup-main #transition-btn[data-btn-state = 'done']{display: none; z-index: 2;}
+.signup-main #transition-btn[data-btn-state = 'wrong']{display: block; z-index: 2;}
+
+#transition-link[data-link-state = 'done']{
+  display: block; z-index: 2;
+}
+
+.signup-main #transition-btn{
+    padding: 10px;
+    width: 200px;
+    margin: 0 auto 0;
+    margin-top: 20px;
+    border: var(--primary-color) 1px solid;
+    background-color: #FFFF;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.2s;
+    /* align-items: flex-end; */
+}
+
+.signup-main #transition-btn:hover{
+    color: #FFFF;
+    background-color: var(--primary-color);
+}

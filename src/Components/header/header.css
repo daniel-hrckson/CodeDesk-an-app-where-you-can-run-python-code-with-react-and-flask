@@ -1,0 +1,47 @@
+:root{
+    --zeroary-color: #FCA311;
+    --primary-color: #d0840b;
+    --secondary-color: #14213D;
+    box-sizing: border-box;
+}
+
+.header a{
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  width: 100%;
+  height: 80px;
+  background-color: #FFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  box-shadow: black 0px 0px 1px;
+}
+
+.header img{
+  width: auto;
+  height: 100%;
+  position:absolute;
+  left: -30px;
+  margin-left: 20px;
+  margin-right:20px;
+  top: 0;
+
+}
+
+.header a{
+  display: none;
+}
+
+.header a[data-status = 'true']{
+  text-decoration: none;
+  display: block;
+  background-color: #FFFF;
+  align-self: center;
+  margin-left: 20px;
+  margin-right:20px;
+}

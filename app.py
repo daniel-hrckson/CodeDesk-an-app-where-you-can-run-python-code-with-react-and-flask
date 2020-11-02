@@ -48,7 +48,7 @@ def user_loader(id):
 
 ###############################################
 ###############################################
-# Here ar models
+# Here are models
 class User(db.Model, flask_login.UserMixin):
     id       = db.Column(db.Integer, primary_key=True, unique=True, autoincrement=True)
     username = db.Column(db.String(20), nullable=False, unique=True)

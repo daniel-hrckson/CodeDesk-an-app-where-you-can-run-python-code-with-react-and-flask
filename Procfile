@@ -1,1 +1,1 @@
-web: python3 wsgi
+web: python3 wsgi.py

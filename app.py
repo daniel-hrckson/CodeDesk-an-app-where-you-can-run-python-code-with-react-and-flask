@@ -17,7 +17,7 @@ db_path = 'sqlite:////' + os.path.dirname(os.path.abspath(__name__)) + '/databas
 
 
 
-application = Flask(__name__, template_folder='build/', static_folder='build/static')
+application = Flask(__name__, template_folder='./build', static_folder='./build/static')
 
 application.config['SQLALCHEMY_DATABASE_URI']           = db_path
 application.config['SQLALCHEMY_TRACK_MODIFICATIONS']    = True
@@ -120,3 +120,6 @@ def run_code():
 
     except Exception as e:
         return {'response':str(e)}
+
+# if __name__ == '__main__':
+#     application.run(host='0.0.0.0', debug=False, port=os.environ.get('PORT', 80))

@@ -12,11 +12,6 @@ export default class Header extends Component{
     super(props)
   }
 
-  // Asks to the server if the user is logged
-  is_loggedf = async() => {
-      const data = await api.get('is_logged')
-      this.setState({is_logged: data.data['response']})
-  }
 
   render(){
     return(

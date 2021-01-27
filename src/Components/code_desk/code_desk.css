@@ -1,0 +1,57 @@
+:root{
+    --zeroary-color: #FCA311;
+    --primary-color: #d0840b;
+    --secondary-color: #14213D;
+    box-sizing: border-box;
+}
+
+.desk-div button{
+  margin: 0;
+  padding: 0;
+}
+
+.desk-div{
+  margin: 20px auto 20px;
+  width: 90%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+}
+
+.desk-div textarea{
+  /* width: 48%; */
+  padding: 20px;
+  border: var(--primary-color) solid 1px;
+  background-color: #FFFF;
+}
+
+.textarea-output{
+  width: 30%;
+  height: 420px;
+}
+
+.textarea-input{
+  width: 65%;
+  height: 100%;
+}
+
+.desk-div button{
+  border: var(--primary-color) solid 2px;
+  font-weight: bold;
+  z-index: 2;
+  position: absolute;
+  width: 30%;
+  height: 50px;
+  right: 0;
+  bottom: 0;
+}
+
+.desk-div button:hover{
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  background-color: var(--primary-color);
+
+}

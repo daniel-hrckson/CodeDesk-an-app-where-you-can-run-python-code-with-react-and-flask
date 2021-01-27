@@ -1,0 +1,13 @@
+ .home-page-div{
+   width: 600px;
+   margin: 50px auto 50px;
+   font-family: monospace;
+ }
+
+ .home-page-div h1{
+   line-height: 1.5;
+   font-family: monospace;
+   text-align: center;
+   font-size: 32px;
+   font-weight: 500;
+ }
